@@ -1,0 +1,860 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: radial-gradient(
+    82.33% 70.44% at 50% 0%,
+    #26394d 0%,
+    #212529 100%
+  );
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 72px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+p {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+
+  color: #a3b8cc;
+}
+
+a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ff7f22;
+
+  &:hover {
+    color: #ff5722;
+  }
+  &:active {
+    color: #ff7f22;
+    text-decoration: none;
+  }
+  &:disabled {
+    color: #4c5865;
+  }
+}
+
+.center {
+  padding-left: 452px;
+  padding-right: 452px;
+}
+
+.logo {
+  width: 78px;
+  height: 48px;
+  background-size: cover;
+  background-image: url('/img/Logo.svg');
+  background-repeat: no-repeat;
+}
+
+.button {
+  width: 236px;
+  height: 48px;
+  border-radius: 60px;
+  box-sizing: border-box;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+}
+
+.nav {
+  // width: 100vw;
+  height: 48px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 96px;
+  padding-top: 48px;
+
+  &-button {
+    background-color: transparent;
+
+    border: 2px solid #ff7f22;
+    filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.16));
+  }
+}
+
+.route {
+  width: 24px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-bottom: 22px;
+
+  padding-top: 48px;
+  padding-right: 130px;
+
+  &__count {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #667380;
+
+    align-items: center;
+
+    padding-bottom: 114px;
+  }
+
+  &__text {
+    rotate: -90deg;
+    padding-left: 8px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    color: #667380;
+  }
+
+  &__arrow {
+    rotate: -90deg;
+    color: #667380;
+  }
+}
+
+.welcome {
+  // width: 100vw;
+  box-sizing: border-box;
+
+  padding-bottom: 100px;
+
+  display: flex;
+
+  &__block {
+    display: flex;
+    gap: 50px;
+    &__textbox {
+      width: 470px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 24px;
+    }
+
+    &__image {
+      width: 366px;
+      height: 320px;
+
+      background-image: url('/img/robots.svg');
+      background-size: cover;
+    }
+  }
+
+  &_pic {
+    width: 366px;
+    height: 320px;
+
+    background-image: url('/img/robots.svg');
+    background-size: cover;
+  }
+}
+
+.mainRoute {
+  width: 24px;
+
+  padding-right: 130px;
+  &__page {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #667380;
+
+    align-items: center;
+
+    padding-bottom: 114px;
+    padding-top: 6px;
+  }
+}
+
+.crypto {
+  // width: 100vw;
+  box-sizing: border-box;
+
+  padding-bottom: 100px;
+
+  display: flex;
+}
+
+.coin {
+  height: 20px;
+  width: 16px;
+  background-size: cover;
+  background: url('/img/coin.svg');
+  background-repeat: no-repeat;
+  // flex-shrink: 0;
+  position: absolute;
+}
+
+.cryptoBag {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    padding-bottom: 60px;
+  }
+
+  &__coin {
+    max-width: 800px;
+    height: 20px;
+    display: flex;
+    margin-bottom: 24px;
+  }
+  &__amount {
+    padding-bottom: 44px;
+  }
+  &__action {
+    display: flex;
+    gap: 31px;
+
+    &-still {
+      &_Input {
+        border: 2px solid #a3b8cc;
+        // &:checked {
+        //   border: 2px solid #ff7f22;
+        // }
+      }
+
+      &_Label {
+        padding-left: 8px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.shop {
+  // width: 100vw;
+  box-sizing: border-box;
+
+  padding-bottom: 100px;
+
+  display: flex;
+}
+
+.thirdPartRoute {
+  width: 24px;
+
+  padding-right: 130px;
+  &_page {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #667380;
+
+    align-items: center;
+  }
+}
+
+.thirdPartRoute_page {
+  width: 24px;
+
+  padding-right: 130px;
+  &_page {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #667380;
+
+    align-items: center;
+
+    padding-bottom: 114px;
+  }
+}
+
+.market {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+
+  &__place {
+    display: flex;
+    gap: 24px;
+  }
+}
+
+.itembox {
+  width: 236px;
+
+  display: flex;
+  flex-direction: column;
+
+  &__biotech {
+    width: 236px;
+    height: 128px;
+
+    background: url('/img/BioMicSoul.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -0 -25px;
+
+    padding-bottom: 25px;
+  }
+
+  &__microchip {
+    width: 236px;
+    height: 128px;
+
+    background: url('/img/BioMicSoul.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -0 -245px;
+
+    padding-bottom: 25px;
+  }
+  &__soul {
+    width: 236px;
+    height: 128px;
+
+    background: url('/img/BioMicSoul.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -0 -465px;
+
+    padding-bottom: 25px;
+  }
+
+  &_title {
+    font-size: 20px;
+    text-align: center;
+    line-height: 32px;
+
+    padding-bottom: 5px;
+  }
+  &-price {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+    padding-bottom: 24px;
+  }
+  &_install {
+    text-align: center;
+
+    padding: 12px 60px;
+
+    background: linear-gradient(180deg, #ff7f22 0%, #ff5722 100%);
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.16);
+    border-radius: 60px;
+    border: 0px;
+    &:hover {
+      background: #ff5722;
+    }
+
+    &:active {
+      background: #ff7f22;
+    }
+
+    &:disabled {
+      background: #4c5865;
+      color: #7d90a6;
+    }
+  }
+}
+
+.storage {
+  // width: 100vw;
+  box-sizing: border-box;
+
+  padding-bottom: 100px;
+  display: flex;
+}
+
+.fourthPartRoute {
+  width: 24px;
+
+  padding-right: 130px;
+  &_page {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #667380;
+
+    align-items: center;
+  }
+}
+
+.fourthPartRoute_page {
+  width: 24px;
+
+  padding-right: 130px;
+  &_page {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #667380;
+
+    align-items: center;
+
+    padding-bottom: 114px;
+  }
+}
+
+.stock {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+
+  &_itembox {
+    display: flex;
+    gap: 24px;
+  }
+}
+
+.stock__items {
+  width: 236px;
+
+  display: flex;
+  flex-direction: column;
+
+  &_subtitle {
+    text-align: center;
+
+    padding-bottom: 5px;
+  }
+  &-price {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+    padding-bottom: 15px;
+  }
+
+  &_amount {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+
+    padding-bottom: 24px;
+  }
+  &-sell {
+    text-align: center;
+    color: #7cdaf9;
+    background-color: transparent;
+
+    padding: 12px 60px;
+
+    border: 2px solid #7cdaf9;
+    filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.16));
+    border-radius: 60px;
+
+    &:hover {
+      background: #7cdaf9;
+      color: black;
+    }
+
+    &:active {
+      background: transparent;
+      border: 2px solid #22b3e3;
+      color: #7cdaf9;
+    }
+
+    &:disabled {
+      background: transparent;
+      color: #4c5865;
+      border: 2px solid #4c5865;
+    }
+  }
+}
+
+.manufacture {
+  // width: 100vw;
+  box-sizing: border-box;
+
+  padding-bottom: 100px;
+  display: flex;
+}
+
+.fourthPartRoute {
+  width: 24px;
+
+  padding-right: 130px;
+  &_page {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #667380;
+
+    align-items: center;
+  }
+}
+
+.fourthPartRoute_page {
+  width: 24px;
+
+  padding-right: 130px;
+  &_page {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #667380;
+
+    align-items: center;
+
+    padding-bottom: 114px;
+  }
+}
+
+.production {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+  &_title {
+    height: 72px;
+  }
+
+  &_section {
+    display: flex;
+    gap: 24xp;
+  }
+
+  &_input {
+    &-buy {
+      background: transparent;
+      border: 2px solid #ff7f22;
+      filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.16));
+      border-radius: 60px;
+      &:hover {
+        background: #ff5722;
+        border: 0px;
+      }
+      &:active {
+        background: #ff7f22;
+        border: 0px;
+      }
+      &:disabled {
+        background: transparent;
+        border: 2px solid #4c5865;
+        color: #4c5865;
+      }
+    }
+  }
+}
+
+.biorobots__type {
+  &_title {
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+
+    padding-bottom: 16px;
+
+    &-frontEnd {
+      display: flex;
+      align-items: center;
+
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: #ffffff;
+    }
+
+    &-design {
+      display: flex;
+      align-items: center;
+
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: #ffffff;
+    }
+  }
+  &_submit {
+    height: 32px;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 28px;
+
+    &-frontEnd {
+      display: flex;
+      gap: 8px;
+    }
+
+    &-design {
+      display: flex;
+      gap: 8px;
+    }
+  }
+}
+
+.stabilizer__type {
+  &_title {
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+
+    padding-bottom: 16px;
+
+    &-male {
+      display: flex;
+      align-items: center;
+
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: #ffffff;
+    }
+
+    &-female {
+      display: flex;
+      align-items: center;
+
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: #ffffff;
+    }
+  }
+  &_submit {
+    height: 32px;
+
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 77px;
+
+    &-male {
+      display: flex;
+      gap: 8px;
+    }
+
+    &-female {
+      display: flex;
+      gap: 8px;
+    }
+  }
+}
+
+.production_materials {
+  display: flex;
+  flex-direction: column;
+  width: 236px;
+  padding-left: 27px;
+  padding-right: 38px;
+
+  &__text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &_icon {
+    padding-bottom: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    &-block {
+      width: 48px;
+      height: 48px;
+
+      border-radius: 4px;
+      background: #333940;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &__biotech {
+        width: 36px;
+        height: 24px;
+
+        mask-image: url('/img/tech-mini.svg');
+        mask-repeat: no-repeat;
+        mask-size: contain;
+        background: #4c5865;
+      }
+
+      &__microchip {
+        width: 24px;
+        height: 24px;
+
+        mask-image: url('/img/microchip-mini.svg');
+        mask-repeat: no-repeat;
+        mask-size: contain;
+        background: #4c5865;
+
+        &__exist {
+          background: #ffffff;
+        }
+
+        &__used {
+          background: #ff7f22;
+          border: 2px solid #ff7f22;
+        }
+      }
+
+      &__soul {
+        width: 32px;
+        height: 32px;
+
+        mask-image: url('/img/soul-mini.svg');
+        mask-repeat: no-repeat;
+        mask-size: contain;
+        background: #4c5865;
+      }
+    }
+  }
+}
+.production_result {
+  background: url(/img/production-sprite.png);
+  width: 236px;
+  height: 360px;
+}
+
+.control {
+  font-family: arial;
+  display: block;
+  position: relative;
+  padding-left: 36px;
+  margin-bottom: 5px;
+  padding-top: 3px;
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.control_indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  background: transparent;
+  border: 2px solid #a3b8cc;
+  border-radius: 0px;
+}
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+  background: transparent;
+}
+.control:hover input ~ .control_indicator {
+  border: 2px solid #4c5865;
+}
+
+.control input:checked ~ .control_indicator {
+  background: transparent;
+}
+.control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+  background-color: transparent;
+}
+.control input:disabled ~ .control_indicator {
+  background: transparent;
+  opacity: 2;
+  pointer-events: none;
+  border: 2px solid #333940;
+}
+.control_indicator:after {
+  box-sizing: unset;
+  content: '';
+  position: absolute;
+  display: none;
+}
+.control input:checked ~ .control_indicator:after {
+  display: block;
+}
+.control-checkbox .control_indicator:after {
+  left: 10px;
+  top: 3px;
+  width: 3px;
+  height: 15px;
+  border: solid #ff7f22;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.control-checkbox input:disabled ~ .control_indicator:after {
+  border-color: #ff7f22;
+}
+
+.radiobtn {
+  // position: absolute;
+  // z-index: -1;
+  // opacity: 0;
+}
+.radiobtn + label {
+  position: relative;
+  padding: 0 0 0 30px;
+  cursor: pointer;
+  padding-left: 50px;
+}
+.radiobtn + label:before {
+  content: ' ';
+  position: absolute;
+  top: 0 px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #a3b8cc;
+  background: transparent;
+}
+.radiobtn + label:after {
+  content: ' ';
+  position: absolute;
+  top: 7px;
+  left: 5px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ff7f22;
+  opacity: 0;
+}
+.radiobtn:checked + label:after {
+  opacity: 1;
+}

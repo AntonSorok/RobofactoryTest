@@ -1,0 +1,740 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: radial-gradient(82.33% 70.44% at 50% 0%, #26394d 0%, #212529 100%);
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 72px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+p {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #a3b8cc;
+}
+
+a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ff7f22;
+}
+a:hover {
+  color: #ff5722;
+}
+a:active {
+  color: #ff7f22;
+  text-decoration: none;
+}
+a:disabled {
+  color: #4c5865;
+}
+
+.center {
+  padding-left: 452px;
+  padding-right: 452px;
+}
+
+.logo {
+  width: 78px;
+  height: 48px;
+  background-size: cover;
+  background-image: url("/img/Logo.svg");
+  background-repeat: no-repeat;
+}
+
+.button {
+  width: 236px;
+  height: 48px;
+  border-radius: 60px;
+  box-sizing: border-box;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+}
+
+.nav {
+  height: 48px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 96px;
+  padding-top: 48px;
+}
+.nav-button {
+  background-color: transparent;
+  border: 2px solid #ff7f22;
+  filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.16));
+}
+
+.route {
+  width: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-bottom: 22px;
+  padding-top: 48px;
+  padding-right: 130px;
+}
+.route__count {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #667380;
+  align-items: center;
+  padding-bottom: 114px;
+}
+.route__text {
+  rotate: -90deg;
+  padding-left: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  color: #667380;
+}
+.route__arrow {
+  rotate: -90deg;
+  color: #667380;
+}
+
+.welcome {
+  box-sizing: border-box;
+  padding-bottom: 100px;
+  display: flex;
+}
+.welcome__block {
+  display: flex;
+  gap: 50px;
+}
+.welcome__block__textbox {
+  width: 470px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+.welcome__block__image {
+  width: 366px;
+  height: 320px;
+  background-image: url("/img/robots.svg");
+  background-size: cover;
+}
+.welcome_pic {
+  width: 366px;
+  height: 320px;
+  background-image: url("/img/robots.svg");
+  background-size: cover;
+}
+
+.mainRoute {
+  width: 24px;
+  padding-right: 130px;
+}
+.mainRoute__page {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #667380;
+  align-items: center;
+  padding-bottom: 114px;
+  padding-top: 6px;
+}
+
+.crypto {
+  box-sizing: border-box;
+  padding-bottom: 100px;
+  display: flex;
+}
+
+.cryptoBag {
+  display: flex;
+  flex-direction: column;
+}
+.cryptoBag__title {
+  padding-bottom: 60px;
+}
+.cryptoBag__coin {
+  width: 16px;
+  height: 20px;
+  background: url("/img/coin.svg");
+  background-repeat: no-repeat;
+  padding-bottom: 24px;
+}
+.cryptoBag__amount {
+  padding-bottom: 44px;
+}
+.cryptoBag__action {
+  display: flex;
+  gap: 31px;
+}
+.cryptoBag__action-still_Input {
+  border: 2px solid #a3b8cc;
+}
+.cryptoBag__action-still_Label {
+  padding-left: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.shop {
+  box-sizing: border-box;
+  padding-bottom: 100px;
+  display: flex;
+}
+
+.thirdPartRoute {
+  width: 24px;
+  padding-right: 130px;
+}
+.thirdPartRoute_page {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #667380;
+  align-items: center;
+}
+
+.thirdPartRoute_page {
+  width: 24px;
+  padding-right: 130px;
+}
+.thirdPartRoute_page_page {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #667380;
+  align-items: center;
+  padding-bottom: 114px;
+}
+
+.market {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+}
+.market__place {
+  display: flex;
+  gap: 24px;
+}
+
+.itembox {
+  width: 236px;
+  display: flex;
+  flex-direction: column;
+}
+.itembox__biotech {
+  width: 236px;
+  height: 128px;
+  background: url("/img/BioMicSoul.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -25px;
+  padding-bottom: 25px;
+}
+.itembox__microchip {
+  width: 236px;
+  height: 128px;
+  background: url("/img/BioMicSoul.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -245px;
+  padding-bottom: 25px;
+}
+.itembox__soul {
+  width: 236px;
+  height: 128px;
+  background: url("/img/BioMicSoul.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -465px;
+  padding-bottom: 25px;
+}
+.itembox_title {
+  font-size: 20px;
+  text-align: center;
+  line-height: 32px;
+  padding-bottom: 5px;
+}
+.itembox-price {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  padding-bottom: 24px;
+}
+.itembox_install {
+  text-align: center;
+  padding: 12px 60px;
+  background: linear-gradient(180deg, #ff7f22 0%, #ff5722 100%);
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.16);
+  border-radius: 60px;
+  border: 0px;
+}
+.itembox_install:hover {
+  background: #ff5722;
+}
+.itembox_install:active {
+  background: #ff7f22;
+}
+.itembox_install:disabled {
+  background: #4c5865;
+  color: #7d90a6;
+}
+
+.storage {
+  box-sizing: border-box;
+  padding-bottom: 100px;
+  display: flex;
+}
+
+.fourthPartRoute {
+  width: 24px;
+  padding-right: 130px;
+}
+.fourthPartRoute_page {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #667380;
+  align-items: center;
+}
+
+.fourthPartRoute_page {
+  width: 24px;
+  padding-right: 130px;
+}
+.fourthPartRoute_page_page {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #667380;
+  align-items: center;
+  padding-bottom: 114px;
+}
+
+.stock {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+}
+.stock_itembox {
+  display: flex;
+  gap: 24px;
+}
+
+.stock__items {
+  width: 236px;
+  display: flex;
+  flex-direction: column;
+}
+.stock__items_subtitle {
+  text-align: center;
+  padding-bottom: 5px;
+}
+.stock__items-price {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.stock__items_amount {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 24px;
+}
+.stock__items-sell {
+  text-align: center;
+  color: #7cdaf9;
+  background-color: transparent;
+  padding: 12px 60px;
+  border: 2px solid #7cdaf9;
+  filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.16));
+  border-radius: 60px;
+}
+.stock__items-sell:hover {
+  background: #7cdaf9;
+  color: black;
+}
+.stock__items-sell:active {
+  background: transparent;
+  border: 2px solid #22b3e3;
+  color: #7cdaf9;
+}
+.stock__items-sell:disabled {
+  background: transparent;
+  color: #4c5865;
+  border: 2px solid #4c5865;
+}
+
+.manufacture {
+  box-sizing: border-box;
+  padding-bottom: 100px;
+  display: flex;
+}
+
+.fourthPartRoute {
+  width: 24px;
+  padding-right: 130px;
+}
+.fourthPartRoute_page {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #667380;
+  align-items: center;
+}
+
+.fourthPartRoute_page {
+  width: 24px;
+  padding-right: 130px;
+}
+.fourthPartRoute_page_page {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #667380;
+  align-items: center;
+  padding-bottom: 114px;
+}
+
+.production {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.production_title {
+  height: 72px;
+}
+.production_section {
+  display: flex;
+  gap: 24xp;
+}
+.production_input-buy {
+  background: transparent;
+  border: 2px solid #ff7f22;
+  filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.16));
+  border-radius: 60px;
+}
+.production_input-buy:hover {
+  background: #ff5722;
+  border: 0px;
+}
+.production_input-buy:active {
+  background: #ff7f22;
+  border: 0px;
+}
+.production_input-buy:disabled {
+  background: transparent;
+  border: 2px solid #4c5865;
+  color: #4c5865;
+}
+
+.biorobots__type_title {
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  padding-bottom: 16px;
+}
+.biorobots__type_title-frontEnd {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.biorobots__type_title-design {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.biorobots__type_submit {
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 28px;
+}
+.biorobots__type_submit-frontEnd {
+  display: flex;
+  gap: 8px;
+}
+.biorobots__type_submit-design {
+  display: flex;
+  gap: 8px;
+}
+
+.stabilizer__type_title {
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  padding-bottom: 16px;
+}
+.stabilizer__type_title-male {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.stabilizer__type_title-female {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.stabilizer__type_submit {
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 77px;
+}
+.stabilizer__type_submit-male {
+  display: flex;
+  gap: 8px;
+}
+.stabilizer__type_submit-female {
+  display: flex;
+  gap: 8px;
+}
+
+.production_materials {
+  display: flex;
+  flex-direction: column;
+  width: 236px;
+  padding-left: 27px;
+  padding-right: 38px;
+}
+.production_materials__text {
+  font-size: 12px;
+  line-height: 16px;
+}
+.production_materials_icon {
+  padding-bottom: 75px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.production_materials_icon-block {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  background: #333940;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.production_materials_icon-block__biotech {
+  width: 36px;
+  height: 24px;
+  -webkit-mask-image: url("/img/tech-mini.svg");
+          mask-image: url("/img/tech-mini.svg");
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  background: #4c5865;
+}
+.production_materials_icon-block__microchip {
+  width: 24px;
+  height: 24px;
+  -webkit-mask-image: url("/img/microchip-mini.svg");
+          mask-image: url("/img/microchip-mini.svg");
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  background: #4c5865;
+}
+.production_materials_icon-block__microchip__exist {
+  background: #ffffff;
+}
+.production_materials_icon-block__microchip__used {
+  background: #ff7f22;
+  border: 2px solid #ff7f22;
+}
+.production_materials_icon-block__soul {
+  width: 32px;
+  height: 32px;
+  -webkit-mask-image: url("/img/soul-mini.svg");
+          mask-image: url("/img/soul-mini.svg");
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  background: #4c5865;
+}
+
+.production_result {
+  background: url(/img/production-sprite.png);
+  width: 236px;
+  height: 360px;
+}
+
+.control {
+  font-family: arial;
+  display: block;
+  position: relative;
+  padding-left: 36px;
+  margin-bottom: 5px;
+  padding-top: 3px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.control_indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  background: transparent;
+  border: 2px solid #a3b8cc;
+  border-radius: 0px;
+}
+
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+  background: transparent;
+}
+
+.control:hover input ~ .control_indicator {
+  border: 2px solid #4c5865;
+}
+
+.control input:checked ~ .control_indicator {
+  background: transparent;
+}
+
+.control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+  background-color: transparent;
+}
+
+.control input:disabled ~ .control_indicator {
+  background: transparent;
+  opacity: 2;
+  pointer-events: none;
+  border: 2px solid #333940;
+}
+
+.control_indicator:after {
+  box-sizing: unset;
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.control input:checked ~ .control_indicator:after {
+  display: block;
+}
+
+.control-checkbox .control_indicator:after {
+  left: 10px;
+  top: 3px;
+  width: 3px;
+  height: 15px;
+  border: solid #ff7f22;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.control-checkbox input:disabled ~ .control_indicator:after {
+  border-color: #ff7f22;
+}
+
+.radiobtn {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.radiobtn + label {
+  position: relative;
+  padding: 0 0 0 30px;
+  cursor: pointer;
+  padding-left: 50px;
+}
+
+.radiobtn + label:before {
+  content: " ";
+  position: absolute;
+  top: 0 px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #a3b8cc;
+  background: transparent;
+}
+
+.radiobtn + label:after {
+  content: " ";
+  position: absolute;
+  top: 7px;
+  left: 5px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ff7f22;
+  opacity: 0;
+}
+
+.radiobtn:checked + label:after {
+  opacity: 1;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="nav center">
+      <a href="index.html"> <div class="logo" alt="Logo"></div></a>
+      <button class="nav-button button">Произвести биоробота</button>
+    </nav>
+    <div class="welcome center">
+      <div class="route">
+        <p class="route__count">01</p>
+        <p class="route__text">Скролл</p>
+        <i class="route__arrow fa-solid fa-arrow-left"></i>
+      </div>
+      <div class="welcome__block">
+        <div class="welcome__block__textbox">
+          <h1 class="welcome__block__textbox_title">
+            Фабрика по производству биороботов
+          </h1>
+          <p class="welcome__block__textbox_subtitle">
+            класса «монитор-кресло»
+          </p>
+        </div>
+        <div class="welcome__block__image"></div>
+      </div>
+    </div>
+    <div class="crypto center">
+      <div class="mainRoute"><p class="mainRoute__page">02</p></div>
+      <div class="cryptoBag">
+        <h2 class="cryptoBag__title">Кошелёк криптовалют</h2>
+        <div class="cryptoBag__coin"></div>
+        <p class="cryptoBag__amount">45 biorobo монет</p>
+        <!-- Меняется по падежам -->
+        <div class="cryptoBag__action">
+          <a href="#" class="CrtyptoBag__action-still">Нацыганить</a>
+          <div>
+            <label for="fiveCoin" class="control control-checkbox">
+              Цыганить по 5 монет
+              <input id="fiveCoin" type="checkbox" checked="checked" />
+              <div class="control_indicator"></div>
+            </label>
+            <!-- <input
+              id="fiveCoins"
+              class="cryptoBag__action-still_Input"
+              type="checkbox"
+            />
+            <label class="cryptoBag__action-still_Label" for="fiveCoins"
+              >Цыганить по 5 монет</label
+            > -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="shop center">
+      <div class="mainRoute">
+        <p class="mainRoute__page">03</p>
+      </div>
+      <div class="market">
+        <h2 class="market_title">Рынок комплектующих</h2>
+        <div class="market__place">
+          <div class="itembox">
+            <div class="itembox__biotech"></div>
+            <!-- <img class="itembox_pic" src="/img/Subtract.svg" alt="Biotech" /> -->
+            <h1 class="itembox_title">Биорука</h1>
+            <p class="itembox-price">Стоимость: <strong>7 монет</strong></p>
+            <button class="itembox_install button">Установить</button>
+          </div>
+          <div class="itembox">
+            <div class="itembox__microchip"></div>
+
+            <!-- <img class="itembox_pic" src="/img/Microchip.svg" alt="Microchip" /> -->
+            <p class="itembox_title">Микрочип</p>
+            <p class="itembox-price">Стоимость: <strong>5 монет</strong></p>
+            <button class="itembox_install button">Установить</button>
+          </div>
+          <div class="itembox">
+            <div class="itembox__soul"></div>
+
+            <!-- <img class="itembox_pic" src="/img/Soul.svg" alt="Soul" /> -->
+            <h1 class="itembox_title">Душа</h1>
+            <p class="itembox-price">Стоимость: <strong>25 монет</strong></p>
+            <button class="itembox_install button">Установить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="storage center">
+      <div class="mainRoute">
+        <p class="mainRoute__page">04</p>
+      </div>
+      <div class="stock">
+        <h2 class="stock_title">Склад</h2>
+        <div class="stock_itembox">
+          <div class="stock__items">
+            <p class="stock__items_subtitle">Биорука</p>
+            <p class="stock__items-price">
+              Стоимость: <strong>5 монет</strong>
+            </p>
+            <h2 class="stock__items_amount">2 шт</h2>
+            <button class="stock__items-sell button">Продать</button>
+          </div>
+          <div class="stock__items">
+            <p class="stock__items_subtitle">Микрочип</p>
+            <p class="stock__items-price">
+              Стоимость: <strong>3 монет</strong>
+            </p>
+            <p class="stock__items_amount">2 шт</p>
+            <button class="stock__items-sell button">Продать</button>
+          </div>
+          <div class="stock__items">
+            <p class="stock__items_subtitle">Душа</p>
+            <p class="stock__items-price">
+              Стоимость: <strong>15 монет</strong>
+            </p>
+            <p class="stock__items_amount">2 шт</p>
+            <button disabled class="stock__items-sell button">Продать</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="manufacture center">
+      <div class="mainRoute">
+        <p class="mainRoute__page">05</p>
+      </div>
+      <div class="production">
+        <h2 class="production_title">Производство</h2>
+        <div class="production_section">
+          <div class="production_input">
+            <div class="biorobots__type">
+              <p class="biorobots__type_title">Тип биоробота:</p>
+              <div class="biorobots__type_submit">
+                <div class="biorobots__type_submit-frontEnd">
+                  <input
+                    class="radiobtn"
+                    id="frontend"
+                    type="radio"
+                    value="frontend"
+                    name="biorobots"
+                    checked
+                  /><label class="biorobots__type_title-frontEnd" for="frontend"
+                    >FrontEnd</label
+                  >
+                </div>
+                <div class="biorobots__type_submit-design">
+                  <input
+                    class="radiobtn"
+                    id="design"
+                    type="radio"
+                    value="design"
+                    name="biorobots"
+                  /><label class="biorobots__type_title-design" for="design"
+                    >Design</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="stabilizer__type">
+              <p class="stabilizer__type_title">Cтабилизатор:</p>
+              <div class="stabilizer__type_submit">
+                <div class="stabilizer__type_submit-male">
+                  <input
+                    class="radiobtn"
+                    id="male"
+                    type="radio"
+                    value="frontend"
+                    name="stabilizer"
+                    checked
+                  /><label class="stabilizer__type_title-male" for="male"
+                    >Male</label
+                  >
+                </div>
+                <div class="stabilizer__type_submit-female">
+                  <input
+                    class="radiobtn"
+                    id="female"
+                    type="radio"
+                    value="design"
+                    name="stabilizer"
+                  /><label class="stabilizer__type_title-female" for="female"
+                    >Female</label
+                  >
+                </div>
+              </div>
+            </div>
+            <button class="production_input-buy button">
+              Произвести за 10 монет
+            </button>
+          </div>
+          <div class="production_materials">
+            <div class="production_materials_icon">
+              <div class="production_materials_icon-block">
+                <div class="production_materials_icon-block__biotech"></div>
+              </div>
+              <div class="production_materials_icon-block">
+                <div class="production_materials_icon-block__biotech"></div>
+              </div>
+              <div class="production_materials_icon-block">
+                <div class="production_materials_icon-block__biotech"></div>
+              </div>
+              <div class="production_materials_icon-block">
+                <div class="production_materials_icon-block__biotech"></div>
+              </div>
+              <div class="production_materials_icon-block">
+                <div class="production_materials_icon-block__microchip"></div>
+              </div>
+              <div class="production_materials_icon-block">
+                <div class="production_materials_icon-block__microchip"></div>
+              </div>
+              <div class="production_materials_icon-block">
+                <div class="production_materials_icon-block__microchip"></div>
+              </div>
+              <div class="production_materials_icon-block">
+                <div class="production_materials_icon-block__microchip"></div>
+              </div>
+              <div class="production_materials_icon-block">
+                <div class="production_materials_icon-block__soul"></div>
+              </div>
+            </div>
+            <p class="production_materials__text">
+              Для производства биоробота не хватает 2 биоруки, 3 микрочипа и 1
+              души
+            </p>
+          </div>
+          <div class="production_result">
+            <!-- Настроить отображение по мере заполнения деталей. -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/4bcf799dd0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
