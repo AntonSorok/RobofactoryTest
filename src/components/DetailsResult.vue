@@ -1,4 +1,3 @@
-<!-- Здесь должна быть результирующая картинка -->
 <template>
   <div :class="getResultRobot" class="result"></div>
 </template>

@@ -135,9 +135,6 @@ export default {
         padding: 12px 60px;
 
         background: linear-gradient(180deg, #ff7f22 0%, #ff5722 100%);
-        // box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.16);
-        // border-radius: 60px;
-        // border: 0px;
         &:hover {
           background: #ff5722;
         }

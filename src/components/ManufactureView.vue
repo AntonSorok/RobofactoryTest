@@ -23,19 +23,6 @@
         </div>
       </div>
     </div>
-    <!-- <h2 class="production__title">Производство</h2>
-    <div class="production_section">
-      <div class="production_section_input">
-        <div class="production_section_input_type">
-          <p class="production_section_input_type__title">Тип биоробота:</p>
-          <div class="production_section_type_submit">
-            <div class="production_section_type_submit-frontend">
-              <label class="production_section_type__title-frontend"></label>
-            </div>
-          </div>
-        </div>
-      </div>
-     </div> -->
   </article>
 </template>
 
@@ -107,10 +94,6 @@ export default {
   display: grid;
   grid-template-columns: (1fr 25px 1fr 39px 1fr);
   grid-template-rows: (1fr 75px 1fr);
-
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: center;
 }
 
 .typeChanger {
@@ -133,8 +116,6 @@ export default {
   border: 2px solid #ff7f22;
   filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.16));
   border-radius: 60px;
-
-  // margin-top: 77px;
 
   &:hover {
     background: #ff5722;

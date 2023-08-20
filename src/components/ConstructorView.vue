@@ -1,5 +1,4 @@
 <!-- eslint-disable vuejs-accessibility/click-events-have-key-events -->
-<!-- Здесь будут детали -->
 <template>
   <div class="constructor">
     <div class="constructor_parts">
@@ -145,62 +144,6 @@ export default {
   }
 }
 
-// .constructor_info {
-//   font-size: 12px;
-//   font-weight: 500;
-//   line-height: 16px;
-// }
-// .constructor_parts {
-//   display: flex;
-//   width: auto;
-//   height: auto;
-//   flex-wrap: wrap;
-//   gap: 10px;
-// }
-
-// .constructor_parts__icon {
-//   width: 48px;
-//   height: 48px;
-
-//   border-radius: 4px;
-//   background: #333940;
-
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-
-// .constructor_parts__biohand {
-//   width: 36px;
-//   height: 24px;
-//   box-sizing: border-box;
-
-//   mask-image: url('../assets/tech-mini.svg');
-//   mask-repeat: no-repeat;
-//   mask-position: center center;
-//   background: #ffffff;
-// }
-
-// .constructor_parts__microchip {
-//   width: 24px;
-//   height: 24px;
-
-//   mask-image: url('../assets/microchip-mini.svg');
-//   mask-repeat: no-repeat;
-//   mask-position: center center;
-//   background: #ffffff;
-// }
-
-// .constructor_parts__soul {
-//   width: 32px;
-//   height: 32px;
-
-//   mask-image: url('../assets/soul-mini.svg');
-//   mask-repeat: no-repeat;
-//   mask-position: center center;
-//   background: #ffffff;
-// }
-
 .disable {
   background: #4c5865;
 }
@@ -210,8 +153,4 @@ export default {
   border: 2px solid #ff7f22;
 }
 
-// .constructor_info {
-//   font-size: 12px;
-//   line-height: 16px;
-// }
 </style>

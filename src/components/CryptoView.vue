@@ -180,12 +180,16 @@ export default {
 .control input:disabled ~ .control_indicator {
   background: transparent;
   opacity: 2;
+
   pointer-events: none;
+
   border: 2px solid #333940;
 }
 .control_indicator:after {
   box-sizing: unset;
+
   content: '';
+
   position: absolute;
   display: none;
 }
@@ -195,10 +199,12 @@ export default {
 .control-checkbox .control_indicator:after {
   left: 10px;
   top: 3px;
+
   width: 3px;
   height: 15px;
   border: solid #ff7f22;
   border-width: 0 2px 2px 0;
+
   transform: rotate(45deg);
 }
 .control-checkbox input:disabled ~ .control_indicator:after {

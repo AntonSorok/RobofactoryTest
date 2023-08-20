@@ -1,7 +1,6 @@
 <template>
   <div>
     <label class="typeField" for="frontend">
-      <!-- id можно убрать -->
       <input
         class="radiobtn"
         id="frontend"
@@ -28,11 +27,6 @@ export default {
   gap: 12px;
 }
 
-// .radiobtn {
-//   // position: absolute;
-//   // z-index: -1;
-//   // opacity: 0;
-// }
 .radiobtn + label {
   position: relative;
   padding: 0 0 0 30px;

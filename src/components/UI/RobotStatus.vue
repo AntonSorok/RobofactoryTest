@@ -26,16 +26,11 @@ export default {
 </script>
 
 <style lang="scss">
-// .modal {
-//   position: absolute;
-//   width: 496px;
-//   height: 240px;
-//   top: 288px;
-//   left: 472px;
-//   border-radius: 10px;
+.modal {
+  border-radius: 10px;
 
-//   background: #fff;
-// }
+  background: #fff;
+}
 .modal__close {
   position: relative;
   left: 456px;
@@ -47,27 +42,22 @@ export default {
 .modal_info_textblock {
   display: flex;
   flex-direction: column;
+
   margin: 0 auto;
   gap: 23px;
+
   width: 320px;
   box-sizing: border-box;
 }
 .modal__title {
-  // position: relative;
-  // top: 33px;
-  // left: 106px;
-
   color: #212529;
   font-size: 32px;
   line-height: 40px;
   font-weight: 600;
+
   box-sizing: border-box;
 }
 .modal__text {
-  // position: relative;
-  // top: 136px;
-  // left: 106px;
-
   color: #4c5865;
   font-size: 20px;
   line-height: 32px;
@@ -79,15 +69,20 @@ export default {
   z-index: 9998;
   top: 0;
   left: 0;
+
   width: 100%;
   height: 100%;
+
   background-color: rgba(0, 0, 0, 0.5);
+
   display: table;
+
   transition: opacity 0.3s ease;
 }
 
 .modal-wrapper {
   display: table-cell;
+
   vertical-align: middle;
 }
 
@@ -95,16 +90,22 @@ export default {
   width: 496px;
   height: 240px;
   border-radius: 10px;
+
   margin: 0px auto;
+
   background-color: #fff;
+
   border-radius: 2px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+
   transition: all 0.3s ease;
+
   font-family: Helvetica, Arial, sans-serif;
 }
 
 .modal-header h3 {
   margin-top: 0;
+
   color: #42b983;
 }
 

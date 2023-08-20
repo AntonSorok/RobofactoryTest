@@ -98,8 +98,6 @@ export default {
 
 .block {
   width: 236px;
-
-  // padding-right: 27px;
 }
 .option {
   display: flex;
@@ -133,8 +131,6 @@ export default {
   border: 2px solid #ff7f22;
   filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.16));
   border-radius: 60px;
-
-  // margin-top: 77px;
 
   &:hover {
     background: #ff5722;

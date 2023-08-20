@@ -29,11 +29,6 @@ export default {
 
 <style lang="scss">
 .modal {
-  // position: absolute;
-  // width: 496px;
-  // height: 240px;
-  // top: 288px;
-  // left: 472px;
   border-radius: 10px;
 
   background: #fff;
@@ -53,9 +48,6 @@ export default {
   display: flex;
 }
 .modal__coin {
-  // position: relative;
-  // top: 48px;
-  // left: 34px;
 
   width: 43px;
   height: 52px;
